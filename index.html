@@ -47,6 +47,9 @@
     .text2{
         font-size: 20px;
     }
+    .text3{
+        color: rgb(46, 25, 87);
+    }
     .song{
         font-family: 'S-CoreDream-3Light';
         background-color: rgb(147,112,219);
@@ -79,12 +82,17 @@
     <div id="titleW">
         <hr color="#9999FF"/> 🎵 Topography's playlist
         <hr width= "250px" color = "#9999FF" noshade />
-        <span class="text1">@Topograph2가 자주 듣는 노래를 소개합니다!</span>
+        <span class="text1">@Topograph2가 <br>자주 듣는 노래를<br> 소개합니다!</span>
         <br>
         <span class="text2">updating...</span>
         <br>
         
     </div>
+    
+    <div id = comments>
+        
+    </div>
+    <span class = "text1 text2 text3"> 하단을 스크롤하면 댓글창이 나와요:)<br> 자신이 좋아하는 곡도 추천해주세요!</span>
     <div class = "song">
         <span class = "title"><span id="songNum">1</span>  TWS - 첫 만남은 계획대로 되지 않아</span>
         <br>
@@ -145,8 +153,24 @@
         곧 더 추가해볼게요 >..<
     </div>
 </body>
+<div id="disqus_thread"></div>
 <script>
-
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ply-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
 </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 </html>
